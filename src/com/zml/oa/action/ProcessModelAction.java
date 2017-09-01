@@ -138,7 +138,7 @@ public class ProcessModelAction {
             bpmnBytes = new BpmnXMLConverter().convertToXML(model);
 
             String processName = modelData.getName() + ".bpmn20.xml";
-            Deployment deployment = repositoryService.createDeployment().name(modelData.getName()).addString(processName, new String(bpmnBytes)).deploy();
+            Deployment deployment = repositoryService.createDeployment().name(modelData.getName()).addString(processName, new String(bpmnBytes, "UTF-8")).deploy();
             message.setStatus(Boolean.TRUE);
             message.setMessage("部署成功，部署ID=" + deployment.getId()+" 请到【流程定义】菜单中查看！");
         } catch (Exception e) {
