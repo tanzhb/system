@@ -40,7 +40,8 @@ public class ResourceServiceImpl implements IResourceService {
 				if(resource.isRootNode()) {
 	                continue;
 	            }
-	            if(!"menu".equals(resource.getType())) {
+	            if(!"menu".equals(resource.getType()) || 
+	            		resource.getParentIds().contains("1000")) {//过滤掉中航国际菜单在左边显示
 	                continue;
 	            }
 	            menus.add(resource);

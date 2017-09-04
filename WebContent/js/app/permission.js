@@ -85,10 +85,10 @@ $(function() {
 		toolbar:'#tb',
 		onClickRow:function(row){   
            //级联选择   
-			resource_datagrid.treegrid('cascadeCheck',{   
-                  id:row.id, //节点ID   
-                  deepCascade:true //深度级联   
-           });   
+//			resource_datagrid.treegrid('cascadeCheck',{   
+//                  id:row.id, //节点ID   
+//                  deepCascade:true //深度级联   
+//           });   
         },
         onContextMenu: function (e, row) {
             e.preventDefault();
