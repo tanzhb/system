@@ -65,7 +65,7 @@
 				    <div onclick="lock(true);" data-options="iconCls:'icon-lock'">停用</div>
 				</div>
 				
-				<table id="resource" title="权限1"></table>
+				<table id="resource" title="权限"></table>
 			</div>
 		</div>
 	</div>
